@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div
+  id="mainCarousel"
+  class="carousel slide mb-5 carousel-pro"
+  data-bs-ride="carousel"
+  data-bs-interval="3000"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#mainCarousel"
+      data-bs-slide-to="0"
+      class="active"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#mainCarousel"
+      data-bs-slide-to="1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#mainCarousel"
+      data-bs-slide-to="2"
+    ></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        style="height: 470px; object-fit: fill"
+        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80"
+        class="d-block w-100 carousel-img"
+      />
+    </div>
+
+    <div class="carousel-item">
+      <img
+        style="height: 470px; object-fit: fill"
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80"
+        class="d-block w-100 carousel-img"
+      />
+    </div>
+
+    <div class="carousel-item">
+      <img
+        style="height: 470px; object-fit: fill"
+        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80"
+        class="d-block w-100 carousel-img"
+      />
+    </div>
+  </div>
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#mainCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#mainCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container mb-5">
+  <h2 class="text-center mb-4 fw-bold">Featured Products</h2>
+  <div class="row g-4">
+  
+      <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSfEBMmI-frGHc53ee0WNDsK1Pd7FK8Mk0wXY58t2R1QD7KhrWE6nokaQK0tgSqkwS1gr5KZK8d_dEP_AartVh1qw-X_GcAxw7io_rzLTgTUpkprqRt5O0TqA"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Handbags</h5>
+          <p class="product-price">₹749</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRrIwjyMui1ZSxcetSheYGA-SViVqNecBsba-LOxp3Qxr_xo4qa1Sal021mmC6ReL4VUcm4gjBhB1hS0VOofmCILYQyVmOpNkHK81Mkly43"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Perfumes</h5>
+          <p class="product-price">₹329</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQQ1VYIMh1audBnu5M69raoqUa5DTBoy0eOmtbNbSWuoEx9iiEXCIBu2rzb0WSoC9vSzY_R_RVIZVrv8iG4rBV9VMtfYQcLiw"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Watch</h5>
+          <p class="product-price">₹630</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTp51RVr0GVhs4nz3-i3Y3HoG6uYLTWGmxLoizWD-H3UAi14n3k0_zBVAC89v4SO-yO8CcrdY6jOkgmXW-rqoZ42VZxBpmcvRahwX4FZ0FR"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">furniture</h5>
+          <p class="product-price">₹20,000</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTA9FdoZn-KpYOcO5Z3dX5jWwd_seYSslB39NYoy3R1X0sHz677ef4zGq4nHz1j6Ob2_zQG6A2DZxJk4MDpeXsicazHBDYdhKhkirW9cG0aiCo1OhhswFopaA"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Frames</h5>
+          <p class="product-price">₹132</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSQ6ZlmE201-MDbT7FDq85wae7P4i-C383yfVUQD7eMNOt6FM4zwUtBtqlUO3OeynkXOBOA7cjekY_zT6JqbJwVmOzDt1nO_idA7Yjn2Sa9aDGdZ9feAlUjzg"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Laptop</h5>
+          <p class="product-price">₹30,500</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTkizZT4Nx-hRstK_n9-c_KX3SOIK56yCxcL8TSotQZei1aJuzvBWM0hSv0WTIPw8oIXjfE2RsJnaVEy4atXUv5sdg4ihZMgpQIqxSgGEdHqFbwtEyD1MDOqg"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Lipstick</h5>
+          <p class="product-price">₹255</p>
+
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR3N27VGp1kE5NX7EubuQBaD9OqsrAhw1Vwuf3ZLJ-CYToAfveh6_FZXv94bgy6nTkyxdVIh5idXBUkVQhUtt9kUsN4OOjWQg"
+          class="card-img-top product-img"
+        />
+        <div class="card-body text-center">
+          <h5 class="product-title">Teddy</h5>
+          <p class="product-price">₹699</p>
+          <button class="button">More</button>
+        </div>
+      </div>
+    </div>
+ 
+
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+

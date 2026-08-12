@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <a class="navbar-brand fw-bold fs-3 text-warning" href="{% url 'home' %}">
+      Shopzy
+    </a>
+
+    <p class="text-muted fs-5">Your trusted online shopping destination.</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg border-0 p-4">
+        <h4 class="fw-bold mb-3 text-warning">Who We Are</h4>
+        <p>
+          Shopzy is a modern e-commerce platform where customers can explore,
+          search, and purchase high-quality products easily. We provide a smooth
+          and secure online shopping experience.
+        </p>
+
+        <h4 class="fw-bold mt-4 mb-3 text-warning">Our Mission</h4>
+        <p>
+          Our mission is to make online shopping simple, fast, and affordable.
+          Shopzy connects customers with the best products at the best prices.
+        </p>
+
+        <h4 class="fw-bold mt-4 mb-3 text-warning">What We Offer</h4>
+        <ul>
+          <li>Wide range of quality products</li>
+          <li>Secure online payments</li>
+          <li>Fast delivery service</li>
+          <li>Easy returns & customer support</li>
+        </ul>
+
+        <h4 class="fw-bold mt-4 mb-3 text-warning">Why Choose Shopzy?</h4>
+        <ul>
+          <li>User-friendly interface</li>
+          <li>Trusted sellers</li>
+          <li>Affordable pricing</li>
+          <li>Safe & secure shopping</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

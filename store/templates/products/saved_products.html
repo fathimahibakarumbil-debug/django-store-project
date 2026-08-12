@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Saved Products</h2>
+
+    {% if products %}
+    <div class="row">
+
+        {% for product in products %}
+        <div class="col-md-4">
+            <div class="card product-card mb-4 shadow">
+
+                <img src="{{ product.image_url }}"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h5>{{ product.title }}</h5>
+                    <p>{{ product.description|truncatewords:10 }}</p>
+                    <p><strong>₹{{ product.price }}</strong></p>
+
+                    <a href="{% url 'remove_saved_product' product.pk %}"
+                       class="btn btn-danger btn-sm">
+                        Remove
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% else %}
+
+        <div class="alert alert-info">
+            No saved products yet.
+        </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-5">
+            <div class="card shadow border-0 p-4 rounded-4">
+                <div class="card-body">
+                    <h2 class="text-center fw-bold mb-4 text-dark">Add Products</h2>
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="price" class="form-label fw-semibold text-secondary small text-uppercase" style="letter-spacing: 1px;">
+                                Price
+                            </label>
+                            <input type="number" 
+                                   name="price" 
+                                   id="price" 
+                                   class="form-control form-control-lg border-2" 
+                                   placeholder="Enter Price"
+                                   step="0.01"
+                                   style="border-radius: 10px; font-size: 1rem;"
+                                   required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="image_url" class="form-label fw-semibold text-secondary small text-uppercase" style="letter-spacing: 1px;">
+                                Image URL
+                            </label>
+                            <input type="text" 
+                                   name="image_url" 
+                                   id="image_url" 
+                                   class="form-control form-control-lg border-2" 
+                                   placeholder="Paste Image Link Here"
+                                   style="border-radius: 10px; font-size: 1rem;"
+                                   required>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-dark btn-lg w-100 fw-bold shadow-sm" style="border-radius: 10px; letter-spacing: 0.5px;">
+                                Add Phroduct
+                            </button>
+                        </div>
+                    </form>
+
+                    <hr class="my-4 text-muted">
+
+                    <p class="text-center mb-0 text-secondary">
+                        <a href="{% url 'product_list' %}" class="text-decoration-none fw-bold text-warning small text-uppercase">
+                            <i class="bi bi-arrow-left"></i> Back to Gallery
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
